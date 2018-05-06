@@ -34,7 +34,8 @@ namespace CardCombatGameServer
 
       app.UseCors(p => p.AllowAnyOrigin()
         .AllowAnyHeader()
-        .AllowAnyMethod());
+        .AllowAnyMethod()
+        .AllowCredentials());
 
       app.UseSignalR(p => p.MapHub<GameHub>("/game"));
     }
