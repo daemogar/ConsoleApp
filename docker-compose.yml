@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  cardcombatgameserver:
+    image: cardcombatgameserver
+    build:
+      context: .
+      dockerfile: CardCombatGameServer/Dockerfile
